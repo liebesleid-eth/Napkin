@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Napkin</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Napkin</title>
+  <style>
+    body
+    {
+      text-align: center;
+    }
+  </style>
 </head>
 <center>
   <body>
-      <h1>Napkin</h1>
-      <script>
-          const urlParams = new URLSearchParams(window.location.search);
-          const text = urlParams.get('text');
+    <h1>Napkin</h1>
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const text = urlParams.get('text');
 
-          document.body.innerHTML += `<p><b>Text:</b> ${text}</p>`;
-      </script>
+      document.body.innerHTML += `<p><b>Text:</b> ${text}</p>`;
+    </script>
   </body>
 </center>
 </html>
