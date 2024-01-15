@@ -3,21 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Site</title>
+    <title>Napkin</title>
 </head>
-<body>
-    <h1>Your Dynamic Content</h1>
-    <script>
-        // Get parameters from the URL
-        const urlParams = new URLSearchParams(window.location.search);
-        const x = urlParams.get('x');
-        const y = urlParams.get('y');
-        const z = urlParams.get('z');
+<center>
+  <body>
+      <h1>Napkin</h1>
+      <script>
+          const urlParams = new URLSearchParams(window.location.search);
+          const text = urlParams.get('text');
 
-        // Display the parameters
-        document.body.innerHTML += `<p>X: ${x}</p>`;
-        document.body.innerHTML += `<p>Y: ${y}</p>`;
-        document.body.innerHTML += `<p>Z: ${z}</p>`;
-    </script>
-</body>
+          document.body.innerHTML += `<p><b>Text:</b> ${x}</p>`;
+      </script>
+  </body>
+</center>
 </html>
