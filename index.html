@@ -1,7 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Site</title>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <h1>Your Dynamic Content</h1>
+    <script>
+        // Get parameters from the URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const x = urlParams.get('x');
+        const y = urlParams.get('y');
+        const z = urlParams.get('z');
+
+        // Display the parameters
+        document.body.innerHTML += `<p>X: ${x}</p>`;
+        document.body.innerHTML += `<p>Y: ${y}</p>`;
+        document.body.innerHTML += `<p>Z: ${z}</p>`;
+    </script>
 </body>
 </html>
